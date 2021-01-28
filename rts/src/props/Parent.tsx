@@ -1,7 +1,11 @@
-import { Child } from './Child';
+import { ChildAsFC } from './Child';
+
+// ChildAsFC allows for the children props, but Child doesn't
 
 const Parent = () => {
-    return <Child color="red" onClick={() => console.log('Clicked')} />
+    return <ChildAsFC color="red" onClick={() => console.log('Clicked')}>
+        lnionnl
+    </ChildAsFC> 
 };
 
 export default Parent;
